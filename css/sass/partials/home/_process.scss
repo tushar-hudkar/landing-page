@@ -1,0 +1,209 @@
+.process {
+    @extend %leftfull;
+    background-color: #f6f6f6;
+    
+    .processDescription{
+        @extend %left;        
+        background-color: #0072c6;
+        padding: 100px 0;
+        @include box-sizing(boxsizing);
+    .text-part {
+        margin: 0 auto;
+        max-width: 498px;
+        width: 100%;
+        @include box-sizing(boxsizing);
+        padding: 0 3%;
+
+        .process-top{
+            @extend %left;
+        h1.main-title {
+            margin-bottom: 48px;
+            font-size: 3rem;
+            font-weight: normal;
+            line-height: 4rem;
+            font-family: 'brandongrotesque-boldbook';
+            color: #FFF;
+        }
+        p.description {
+            margin-bottom: 48px;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            font-family: 'ralewayregular';
+            color: #FFFFFF;
+        }
+        }
+        .team {
+            @extend %leftfull;
+            margin-top: 36px;
+        p.teamName {
+            @extend %leftfull;
+            font-size: 1rem;
+            font-family: 'ralewayregular';
+            color: rgba(255, 255, 255, 0.5);
+        }
+        .projectTeam {
+            margin-top: 14px;
+            @extend %leftfull;
+            .profilePhoto {
+                margin-top: 10px;
+                @extend %left;
+                margin-left: 10px;
+                height: 40px;
+                width: 40px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                border-radius: 50%;
+                &:first-child {
+                    margin-left: 0px;
+                }
+                img {
+                    max-width: 100%;
+                    width: 42px;
+                    @include border-radius(50%);
+                }
+            }
+        }
+    }
+    }
+}
+    .art-for-process {
+        @extend %left;
+        @extend %center;
+
+        img{
+            max-width: 100%;
+            margin: 70px 0;
+        }
+    }
+}
+
+.launcher-process .text-part {
+    background: url('../../../img/launcher/process-background.jpg') no-repeat;
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+      -ms-background-size: cover;
+          background-size: cover;
+}
+
+.os-process .text-part {
+    background:#0b202b;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+@media screen and (max-width: 1440px){
+
+    .process {
+    
+    .processDescription{
+        padding: 100px 0;
+    .text-part {
+        max-width: 498px;
+        padding: 0 3%;
+
+        .process-top{
+        h1.main-title {
+            font-size: 2.625rem;
+            line-height: 3.2rem;
+        }
+        p.description {
+            margin-bottom: 48px;
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+        }
+        .team {
+            margin-top: 36px;
+        p.teamName {
+            font-size: 1rem;
+        }
+        .projectTeam {
+            .profilePhoto {
+                margin-top: 10px;
+                margin-left: 10px;
+                height: 40px;
+                width: 40px;
+                img {
+                    width: 42px;
+                }
+            }
+        }
+    }
+    }
+}
+    .art-for-process {
+
+        img{
+            margin: 70px 0;
+        }
+    }
+}
+
+}
+
+
+
+
+@media screen and (max-width: 640px){
+    .mobileCenter{
+        float: left;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+
+    .process {
+    
+    .processDescription{
+        padding: 48px 0;
+    .text-part {
+        padding: 0 3%;
+
+        .process-top{
+        h1.main-title {
+            margin-bottom: 48px;
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+        p.description {
+            font-size: 1.25rem;
+            line-height: 2rem;
+        }
+        }
+        .team {
+            margin-top: 36px;
+        p.teamName {
+            font-size: 1rem;
+        }
+        .projectTeam {
+            margin-top: 12px;
+            .profilePhoto {
+                img {
+                    width: 42px;
+                }
+            }
+        }
+    }
+    }
+}
+    .art-for-process {
+
+        img{
+            margin: 68px 0;
+        }
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+

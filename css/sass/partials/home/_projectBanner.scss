@@ -1,0 +1,226 @@
+.project-banner {
+    @extend %leftfull;
+    padding: 108px 0 42px 0;
+    h2.banner-title {
+        @extend %leftfull;
+        @extend %center;
+        font-size: 2.625rem;
+        font-family: 'brandongrotesque-boldbook';
+        color: #FFFFFF;
+        margin-bottom: 148px;
+        line-height: 3.625rem;
+    }
+
+    .testimonials {
+        @extend %leftfull;
+        @extend %pos-relative;
+        margin-bottom: 68px;
+
+        .rightPadding{
+            padding-right: 102px;
+        }
+
+        .leftPadding{
+            padding-left: 102px;
+        }
+
+        .box-left{
+            @include border-radius(15px);           
+            background: #ccddea;
+        }
+        .box-right{
+            @include border-radius(15px);            
+            background: #ccddea;
+        }
+        .testimonial-box {
+            @extend %leftfull;
+            padding: 2rem;
+            @extend %pos-relative;
+            border: 1px solid #fcfdfe;
+
+            img.ccc-left{
+                @extend %pos-absolute;
+                width: 42px;
+                max-width: 100%;
+                bottom: 48px;
+                left: -37px;
+            }
+
+            img.mob-top{
+                @extend %pos-absolute;
+                width: 28px;
+                max-width: 100%;
+                bottom: -36px;
+                right: 36px;
+                display: none;
+            }
+
+            img.ccc-right{
+                @extend %pos-absolute;
+                width: 42px;
+                max-width: 100%;
+                bottom: 48px;
+                right: -37px;
+            }
+
+
+            p.testimonialText {
+                @extend %leftfull;
+                font-size: 1rem;
+                text-align: left;
+                line-height: 28px;
+                letter-spacing: 1px;
+                font-family: 'ralewaymedium';
+                color: #000000;
+            }
+
+            p.by-name {
+                @extend %leftfull;
+                font-size: 1.125rem;
+                line-height: 26px;
+                text-align: right;
+                font-family: 'ralewaysemibold';
+            }
+            
+        }
+
+        .testimonialImg{
+            @extend %leftfull;
+            @extend %pos-absolute;
+            bottom: 0px;
+            left: 0px;
+            z-index: 99;
+
+            img.testimonialImgLeft{
+                @extend %left;
+            }
+
+            img.testimonialImgRight{
+                @extend %right;
+            }
+        }
+    }
+    p.some-details {
+        @extend %leftfull;
+        @extend %center;
+        margin-top: 68px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        line-height: 2.375rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-family: 'brandongrotesque-regularbook';
+    }
+}
+
+.zoto {
+    background: url('../../../img/zoto/banner.png') no-repeat;
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+      -ms-background-size: cover;
+          background-size: cover;
+}
+
+.launcher {
+    background: url('../../../img/launcher/banner.png') no-repeat;
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+      -ms-background-size: cover;
+          background-size: cover;
+}
+
+.os {
+    background: url('../../../img/os/banner.jpg') center center no-repeat;
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+      -ms-background-size: cover;
+          background-size: cover;
+}
+
+.white {
+    background: #FFF!important;
+}
+
+.transparent-white {
+    background: rgba(255, 255, 255, 0.2)!important;
+    p, span {
+        color: #FFF!important;
+    }
+}
+
+
+
+
+@media screen and (max-width: 640px){
+    
+    .project-banner {
+    padding: 48px 0 42px 0;
+    h2.banner-title {
+        font-size: 2rem;
+        margin-bottom: 68px;
+        line-height: 2.625rem;
+    }
+
+    .testimonials {
+        margin-bottom: 100px;
+
+        .rightPadding{
+            padding-right: 0px;
+        }
+
+        .leftPadding{
+            padding-left: 0px;
+        }
+
+        .box-left{
+        }
+        .box-right{
+        }
+        .testimonial-box {
+
+            img.ccc-left{
+                display: none;
+            }
+
+            img.mob-top{
+                display: none;
+            }
+
+            img.ccc-right{
+                display: none;
+            }
+
+
+            p.testimonialText {
+                font-size: 1rem;
+                line-height: 28px;
+                letter-spacing: 1px;
+            }
+
+            p.by-name {
+                font-size: 1.125rem;
+                line-height: 26px;
+            }
+            
+        }
+
+        .testimonialImg{
+            top: -26px;
+
+            img.testimonialImgLeft{
+                margin-left: -12px;
+                width: 54px;
+            }
+
+            img.testimonialImgRight{
+                margin-right: -12px;
+                width: 54px;
+            }
+        }
+    }
+    p.some-details {
+        margin-top: 22px;
+        font-size: 0.8rem;
+        line-height: 1.375rem;
+    }
+}   
+}

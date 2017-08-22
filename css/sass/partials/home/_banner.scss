@@ -1,0 +1,40 @@
+.banner {
+    @extend %leftfull;
+    background: #000;
+    @extend %center;
+    @extend %pos-relative;
+    @include box-sizing(boxsizing);
+    background: url(../../../img/home/homeBanner.jpg) no-repeat; 
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+      -ms-background-size: cover;
+          background-size: cover;
+    .bannerContent {
+    	@extend %leftfull;
+        @extend %pos-absolute;
+        left: 0px;
+        bottom: 30px;
+        @include box-sizing(boxsizing);
+    }
+    h6.bannerHeading1{
+        @extend %leftfull;
+        @extend %capital;
+        font-size: 24px;
+        font-family: 'brandongrotesque-mediumbook';
+        font-weight: normal;
+        color: $black;
+        letter-spacing: 10px;
+        margin: 30px 0;
+    }
+    h2 {
+        @extend %leftfull;
+        @extend %capital;
+        font-size: 42px;
+        line-height: 52px;
+        font-family: 'brandongrotesque-blackbook';
+        font-weight: normal;
+        color: $black;
+        letter-spacing: 4px;
+        margin: 10px 0;
+    }
+}

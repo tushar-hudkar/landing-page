@@ -1,0 +1,115 @@
+.header {
+    @extend %leftfull;
+    background: #FFF;
+    z-index:500;
+    -webkit-transform: translateZ(0px);
+    -moz-box-sizing: translateZ(0px);
+    -ms-box-sizing: translateZ(0px);
+    -o-box-sizing: translateZ(0px);
+
+      -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+    .logo_black {
+        @extend %left;
+        img.logoImg {
+            @extend %left;
+            margin-top: 32px;
+            width: 142px;
+        }
+
+        img.plusImg {
+            width: 82px;
+            margin-top: 34px;
+            margin-left: 12px;
+        }
+
+        img.whitePluse{
+            @extend %left;
+            width: 10px;
+            margin-top: 42px;
+            margin-left: 12px;
+        }
+
+        p.work {
+            @extend %left;
+            margin-top: 38px;
+            margin-left: 17px;
+            font-family: 'brandongrotesque-regularbook';
+            color: #fff;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    }
+    ul.rightNav {
+        @extend %right;
+        line-height: 88px;
+        li.headerLinks {
+            @extend %left;
+            margin-left: 80px;
+            list-style: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            font-family: 'brandongrotesque-mediumbook';
+            color: #030000;
+            .clickLine {
+                width: 20px;
+                height: 3px;
+                background-color: $black;
+                margin-bottom: 3px;
+            }
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+    }
+}
+
+.os-header {
+    .logo_black img {
+        height: 35px;
+        margin-top: 36px;
+    }
+}
+
+
+@media screen and (max-width: 640px){
+    .header {
+        padding: 16px 0;
+    .logo_black {
+        line-height: 0px;
+        img.logoImg {
+            margin-top: 0px;
+            width: 112px;
+        }
+
+        img.plusImg {
+            width: 68px;
+            margin-top: 2px;
+            margin-left: 12px;
+        }
+
+        img.whitePluse{
+            width: 10px;
+            margin-top: 4px;
+            margin-left: 12px;
+        }
+
+        p.work {
+            margin-top: 10px;
+            margin-left: 17px;
+            font-size: 1rem;
+        }
+    }
+    ul.rightNav {
+        display: none;
+    }
+}
+    .lastHeader{
+        height: 0px;
+        padding: 0px;
+    }
+}

@@ -1,0 +1,267 @@
+.case-study-glimpse {
+    @extend %leftfull;
+    background: url(../../../img/home/balckBg.jpg) center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    h1.project1thingMainHeading {
+        @extend %leftfull;
+        margin-top: 86px;
+        @extend %center;
+        font-size: 2.5rem;
+        line-height: 4rem;
+        font-family: 'brandongrotesque-boldbook';
+        color: $white;
+        font-weight: normal;
+    }
+    .projectSection {
+        @extend %leftfull;
+        margin-top: 100px;
+        p.smallText {
+            @extend %leftfull;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            line-height: 1.8rem;
+            font-family: 'brandongrotesque-blackbook';
+            color: $white;
+        }
+        h2.project1thingHeading {
+            @extend %leftfull;
+            font-size: 4.5rem;
+            line-height: 6rem;
+            font-family: 'brandongrotesque-mediumbook';
+            color: rgba(255, 255, 255, 0.7);
+            font-weight: normal;
+        }
+        p.project1thingDescription {
+            @extend %leftfull;
+            font-size: 1.25rem;
+            line-height: 2.625rem;
+            font-family: 'ralewaylight';
+            color: $white;
+        }
+        .zotoScreenChat {
+            @extend %leftfull;
+            margin: 64px 0px;
+            @extend %pos-relative;
+            img {
+                @extend %left;
+                max-width: 100%;
+                width: 840px;
+            }
+            p.chat {
+                @extend %left;
+                @extend %pos-absolute;
+                right: 102px;
+                bottom: -22px;
+                font-size: 1rem;
+                line-height: 1.8rem;
+                font-family: 'ralewaysemibold';
+                color: $white;
+            }
+        }
+    }
+    hr.separator {
+        @extend %leftfull;
+        border-top: 1px solid #cccccc;
+        margin-top: 88px;
+    }
+    .projectPoints {
+        @extend %left;
+        margin-top: 92px;
+        @extend %center;
+        img.pointImg {
+            @extend %left;
+            max-width: 100%;
+            width: 54px;
+            margin-left: 50%;
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%); 
+            -ms-transform: translateX(-50%); 
+            -o-transform: translateX(-50%); 
+            transform: translateX(-50%);
+        }
+        p.project1thingHeading {
+            @extend %leftfull;
+            margin-top: 48px;
+            font-size: 3rem;
+            line-height: 4.5rem;
+            font-family: 'brandongrotesque-boldbook';
+            color: rgba(255, 255, 255, 0.7);
+        }
+        p.smallText {
+                @extend %leftfull;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 1rem;
+                line-height: 1.8rem;
+                font-family: 'brandongrotesque-boldbook';
+                color: $white;
+            }
+    }
+    .readButton {
+        @extend %leftfull;
+        @extend %center;
+        margin-top: 160px;
+        margin-bottom: 100px;
+        button.readCaseStudy {
+            background-color: transparent;
+            outline: none;
+            border-radius: 48px;
+            border: 1px solid #fff;
+            font-size: 1.25rem;
+            text-transform: uppercase;
+            font-family: 'ralewaysemibold';
+            color: $white;
+            padding: 22px 80px;
+            img.readArrow {
+                @extend %center;
+                margin-left: 24px;
+                max-width: 100%;
+                width: 22px;
+            }
+        }
+    }
+}
+
+.fixed_Bg {
+    background-attachment: fixed!important;
+    top: 0px;
+    left: 0px;
+}
+
+.zoto-case {}
+.launcher-case {}
+
+
+@media screen and (max-width: 1440px){
+
+    .case-study-glimpse {
+    h1.project1thingMainHeading {
+        margin-top: 86px;
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+    .projectSection {
+        margin-top: 100px;
+        p.smallText {
+        }
+        h2.project1thingHeading {
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+        }
+        p.project1thingDescription {
+            font-size: 1rem;
+            line-height: 2.3rem;
+        }
+        .zotoScreenChat {
+            margin: 64px 0px;
+            img {
+                width: 840px;
+            }
+            p.chat {
+                right: 102px;
+                bottom: -22px;
+                font-size: 1rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+    hr.separator {
+        margin-top: 88px;
+    }
+    .projectPoints {
+        margin-top: 92px;
+        img.pointImg {
+            width: 42px;
+        }
+        p.project1thingHeading {
+            margin-top: 22px;
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
+        p.smallText {
+                font-size: 0.8rem;
+                line-height: 1.8rem;
+            }
+    }
+    .readButton {
+        margin: 100px 0 132px 0;
+        button.readCaseStudy {
+            font-size: 1rem;
+            padding: 16px 64px;
+            img.readArrow {
+            }
+        }
+    }
+}
+
+    
+}
+
+
+@media screen and (max-width: 640px){
+
+        .case-study-glimpse {
+    h1.project1thingMainHeading {
+        margin-top: 86px;
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+    .projectSection {
+        margin-top: 48px;
+        p.smallText {
+            letter-spacing: 1px;
+        }
+        h2.project1thingHeading {
+            margin: 12px 0;
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+        }
+        p.project1thingDescription {
+            font-size: 1.25rem;
+            line-height: 2.3rem;
+        }
+        .zotoScreenChat {
+            margin: 64px 0px;
+            img {
+
+            }
+            p.chat {
+                font-size: 1rem;
+                line-height: 1.8rem;
+            }
+        }
+    }
+    hr.separator {
+        margin-top: 88px;
+    }
+    .projectPoints {
+        margin-top: 38px;
+        img.pointImg {
+            width: 38px;
+        }
+        p.project1thingHeading {
+            margin-top: 28px;
+            font-size: 2rem;
+            line-height: 3.5rem;
+        }
+        p.smallText {
+                letter-spacing: 1px;
+            }
+    }
+    .readButton {
+        button.readCaseStudy {
+            font-size: 1rem;
+            padding: 12px 32px;
+            img.readArrow {
+                width: 16px;
+            }
+        }
+    }
+}
+
+
+}

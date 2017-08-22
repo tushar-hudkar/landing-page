@@ -1,0 +1,346 @@
+.clientTestimonial {
+    @extend %leftfull;
+    padding: 108px 0 42px 0;
+    background-color: #fff;
+    h2.banner-title {
+        @extend %leftfull;
+        @extend %center;
+        font-size: 2.625rem;
+        font-family: 'brandongrotesque-boldbook';
+        color: #030000;
+        margin-bottom: 100px;
+        line-height: 58px;
+    }
+
+    .testimonials {
+        @extend %leftfull;
+        @extend %pos-relative;
+        margin-bottom: 68px;
+
+        .rightPadding{
+            padding-right: 324px;
+        }
+
+        .leftPadding{
+            padding-left: 324px;
+        }
+
+        .box-left{
+            @include border-radius(15px);   
+        }
+        .box-right{
+            @include border-radius(15px);    
+        }
+        .testimonial-box {
+            @extend %leftfull;
+            padding: 2rem;
+            @extend %pos-relative;
+            background-color: #fff;
+            border: 1px solid #E4E4E4;
+
+            img.doubleQuoteStart{
+                @extend %left;
+                max-width: 100%;
+                width: 48px;
+                @extend %pos-absolute;
+                top: -30px;
+                left: 2rem;
+            }
+
+            img.doubleQuoteEnd{
+                @extend %left;
+                max-width: 100%;
+                width: 48px;
+                @extend %pos-absolute;
+                top: -30px;
+                right: 2rem;
+            }
+
+            img.fff-left{
+                @extend %pos-absolute;
+                width: 42px;
+                max-width: 100%;
+                bottom: 48px;
+                left: -37px;
+            }
+
+            img.fff-right{
+                @extend %pos-absolute;
+                width: 42px;
+                max-width: 100%;
+                bottom: 48px;
+                right: -37px;
+            }
+
+            p.testimonialText {
+                @extend %leftfull;
+                font-size: 1rem;
+                text-align: left;
+                line-height: 28px;
+                letter-spacing: 1px;
+                font-family: 'ralewaymedium';
+                color: #000000;
+            }
+            
+        }
+
+        .testimonialImg{
+            @extend %leftfull;
+            @extend %pos-absolute;
+            z-index: 99;
+            bottom: 0px;
+            left: 0px;
+
+            .mmm{
+                @extend %leftfull;
+                padding: 0 56px;
+
+            .pro-name{
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+                font-family: 'ralewaysemibold';
+                color: #fff;
+                margin-bottom: 6px;
+                background-color: #000;
+                /* display: -webkit-inline-box;
+                display: -moz-inline-box;
+                display: -ms-inline-box;
+                display: inline-box;*/
+            }
+
+            .profile{
+                @extend %left;
+                width: 100px;
+                height: 100px;
+                margin-top: 12px;
+                background-color: #e4e4e4;
+                @include border-radius(50%);
+                @extend %overflow;
+                background-color: #f6f6f6;
+
+                img{
+                    @extend %left;
+                    max-width: 100%;
+                    width: 100px;
+                }
+            }
+
+            .floatRight{
+                float: right;
+            }
+            }
+
+            .leftPro{
+                float: left!important;
+
+            }
+
+            .rightPro{
+                float: right!important;
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1440px){
+
+        .clientTestimonial {
+    padding: 74px 0 42px 0;
+    h2.banner-title {
+        font-size: 2.625rem;
+        line-height: 58px;
+    }
+
+    .testimonials {
+        margin-bottom: 68px;
+
+        .rightPadding{
+            padding-right: 148px;
+        }
+
+        .leftPadding{
+            padding-left: 148px;
+        }
+
+        .box-left{
+        }
+        .box-right{  
+        }
+        .testimonial-box {
+            padding: 2rem;
+
+            img.doubleQuoteStart{
+                width: 42px;
+                top: -24px;
+            }
+
+            img.doubleQuoteEnd{
+                width: 42px;
+                top: -24px;
+            }
+
+            img.fff-left{
+                width: 42px;
+                bottom: 48px;
+                left: -37px;
+            }
+
+            img.fff-right{
+                width: 42px;
+                bottom: 48px;
+                right: -37px;
+            }
+
+            p.testimonialText {
+                font-size: 1rem;
+                line-height: 28px;
+            }
+            
+        }
+
+        .testimonialImg{
+            bottom: 0px;
+            left: 0px;
+
+            .mmm{
+                padding: 0 56px;
+
+            .pro-name{
+                font-size: 1rem;
+                margin-bottom: 4px;
+            }
+
+            .profile{
+                width: 88px;
+                height: 88px;
+                margin-top: 12px;
+
+                img{
+                    width: 100px;
+                }
+            }
+
+            .floatRight{
+            }
+            }
+
+            .leftPro{
+            }
+
+            .rightPro{
+            }
+        }
+    }
+}
+
+}
+
+
+
+@media screen and (max-width: 640px){
+
+    .clientTestimonial {
+    padding: 108px 0 42px 0;
+    h2.banner-title {
+        font-size: 2.625rem;
+        margin-bottom: 168px;
+        line-height: 58px;
+    }
+
+    .testimonials {
+        margin-bottom: 168px;
+
+        .rightPadding{
+            padding-right: 0px;
+        }
+
+        .leftPadding{
+            padding-left: 0px;
+        }
+
+        .box-left{
+        }
+        .box-right{
+        }
+        .testimonial-box {
+            padding: 2rem;
+
+            img.doubleQuoteStart{
+                width: 36px;
+                top: -24px;
+                left: 2rem;
+            }
+
+            img.doubleQuoteEnd{
+                width: 36px;
+                top: -24px;
+                right: 2rem;
+            }
+
+            img.fff-left{
+                width: 32px;
+                bottom: 28px;
+                left: -28px;
+                display: none;
+            }
+
+            img.fff-right{
+                width: 32px;
+                bottom: 28px;
+                right: -28px;
+                display: none;
+            }
+
+            p.testimonialText {
+                font-size: 1rem;
+                line-height: 28px;
+            }
+            
+        }
+
+        .testimonialImg{
+            top: 0px;
+
+            .mmm{
+                padding: 0px;
+
+            .pro-name{
+                font-size: 1.125rem;
+                line-height: 1.5rem;
+                margin-bottom: 6px;
+            }
+
+            .profile{
+                width: 54px;
+                height: 54px;
+                margin-top: 12px;
+                float: right;
+
+                img{
+                    width: 100px;
+                }
+            }
+
+            .floatRight{
+                float: left!important;
+            }
+            }
+
+            .leftPro{
+                float: right!important;
+                margin-right: -12px;
+                margin-top: -98px;
+            }
+
+            .rightPro{
+                float: left!important;
+                margin-left: -12px;
+                margin-top: -98px;
+            }
+        }
+    }
+}
+
+}

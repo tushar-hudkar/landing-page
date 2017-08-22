@@ -1,0 +1,86 @@
+/*
+
+Colors
+
+*/
+$black :#000000;
+$gray : #dedddb;
+$white: #FFFFFF;
+/*
+
+Mixins
+
+*/
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-sizing($boxsizing){
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+@mixin transform($transforms) {
+	-moz-transform: $transforms;
+	-o-transform: $transforms;
+	-ms-transform: $transforms;
+	-webkit-transform: $transforms;
+	transform: $transforms;
+}
+
+@mixin translateY($y) {
+   @include transform(translateY($y));
+}
+
+@mixin translateX($y) {
+   @include transform(translateX($y));
+}
+
+/*
+
+Placeholders
+
+*/
+
+%font-arial {
+  font-family: verdana, helvetica, arial, sans-serif;
+}
+
+%bold {font-weight:700;}
+ 
+%capital {text-transform: uppercase;}
+
+%pointer {cursor:pointer;}
+
+%left {float:left;}
+
+%leftfull {float:left; width:100%;}
+
+%center {text-align: center;}
+
+%right {float:right;}
+
+%overflow {overflow:hidden;}
+
+%pos-relative {position: relative;}
+
+%pos-absolute {position: absolute;}
+
+%pos-fixed {position: fixed;}
+
+%overflow {overflow:hidden;}
+ 
+%ease {-webkit-transition: all 0.20s ease-in-out;
+-moz-transition: all 0.20s ease-in-out;
+-ms-transition: all 0.20s ease-in-out;
+-o-transition: all 0.20s ease-in-out;
+transition: all 0.20s ease-in-out;
+}
+
+%clear {clear:both;}

@@ -1,0 +1,55 @@
+.footerSocial{
+	@extend %leftfull;
+	@extend %pos-relative;
+    height: 220px;
+  	background: url('../../../img/home/footerBanner.jpg') no-repeat;
+ 	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+ 	-ms-background-size: cover;
+  	background-size: cover;
+
+  	.socialBox {
+  		@extend %leftfull;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.58);
+    	padding: 3.7rem 0;
+        li {
+            display: inline-block;
+            list-style: none;
+            padding-right: 4%;
+            padding-left: 4%;
+
+            &:first-child{padding-left: 0;}
+            &:last-child{padding-right: 0;}
+
+            .icon{
+            	font-size: 1.125rem;
+            	color: $white;
+            	line-height: 2rem;
+            }
+
+            p{
+            	font-family: 'ralewaylight';
+            	font-size: 0.8125rem;
+            	letter-spacing: 2px;
+            	line-height: 1.125rem;
+            	text-transform: capitalize;
+            	color: rgba(255, 255, 255, 0.87);
+            }
+        }
+    }
+
+    .copyright{
+    	@extend %leftfull;
+    	height: 52px;
+        line-height: 52px;
+    	@extend %pos-absolute;
+    	bottom: 0;
+    	left: 0;
+    	background-color: transparent;
+    	@extend %center;
+    	color: #757575;
+        font-size: 11px;
+        font-family: 'ralewaymedium';
+    }
+}

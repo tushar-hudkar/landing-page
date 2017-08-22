@@ -1,0 +1,331 @@
+///////////////////////custom///////////////////////////////////
+.swiper-button-prev {
+    /* background-image: url("../../../img/prev.png");
+    right: auto;
+    height: 32px; */
+    display: none!important;
+}
+
+.swiper-button-next {
+    /* background-image: url("../../../img/next.png");
+    left: auto;
+    height: 32px; */
+    display: none!important;
+}
+
+.swiper-pagination-bullet{
+  background-color: #A9A9A9;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: rgba(255, 255, 255, 0.58);
+}
+
+
+
+
+
+.swiper-container1{
+  @extend %leftfull;
+  background-color: #1b1b1b;
+  @extend %pos-relative;
+  h1.logo{
+      @extend %leftfull;
+      @extend %center;
+      @extend %pos-absolute;
+      z-index: 99999;
+      top: 54px;
+
+      img{
+        max-width: 100%;
+        width: 200px;
+      }
+    }
+.swiper-wrapper{
+  @extend %leftfull;
+  background-color: #1b1b1b;
+.swiper-slide{
+  @extend %leftfull;
+  @extend  %center;
+
+  .slide{
+      @extend %leftfull;
+      height: 100%;
+      background-color: #1b1b1b;
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -ms-background-size: cover;
+      background-position: 0 bottom;
+
+
+      h2.bannerHeading{
+        @extend %leftfull;
+        @extend %pos-relative;
+        z-index: 9999;
+        margin-top: 334px;
+        font-family: 'brandongrotesque-blackbook';
+        font-size: 4rem;
+        color: $white;
+        line-height: 6rem;
+        letter-spacing: 6px;
+        text-shadow: rgb(3, 3, 3) 0px 4px 5px;
+        @extend %center;
+        text-transform: uppercase;
+        @include box-sizing(boxsizing);
+        padding: 0 4%;
+        font-weight: normal;
+        -webkit-transition: background-image 5s, -webkit-transform 2s;
+
+        .join{
+          font-size: 3.5rem;
+          text-transform: initial;
+        }
+      }
+
+      img.a1{
+        max-width: 100%;
+        @extend %pos-absolute;
+        z-index: 999;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      img.a3{
+        max-width: 100%;
+        max-height: 96%;
+        @extend %pos-absolute;
+        bottom: 0px;
+        right: 4%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .bannerButton{
+          @extend %leftfull;
+        button{
+          margin-top: 44px;
+          background: #212020;
+          width: 318px;
+          height: 68px;
+          border: 1px solid #fff;
+          border-radius: 34px;
+          outline: none;
+          
+          p.btnText{
+              @extend %left;
+              font-size: 1.125rem;
+              font-family: 'ralewaysemibold';
+              color: $white;
+              padding-left: 2rem;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+          }
+
+          img.bannerArrow{
+            @extend %right;
+            width: 22px;
+            padding-right: 2rem;
+          }
+      }
+      }
+
+      .agile{margin-top: 314px!important;}
+
+      .research{
+        padding: 0 100px 0 200px!important;
+        margin-top: 304px!important;
+        text-align: left!important;
+      }
+
+      .at{margin-top: 350px!important;}
+  }
+
+  .sld1{
+      background-image: url(../../../img/homeBanner/bannerA.jpg);     
+  }
+
+  .sld2{
+      background-image: url(../../../img/homeBanner/bannerB.jpg);
+  }
+
+  .sld3{
+      background-image: url(../../../img/homeBanner/bannerC.jpg);
+  }
+
+  .sld4{
+      background-image: url(../../../img/homeBanner/bannerD.jpg);
+  }
+
+}
+}
+}
+
+
+@media screen and (max-width: 1440px){
+    
+    .swiper-container1{
+  h1.logo{
+      top: 34px;
+
+      img{
+        width: 172px;
+      }
+    }
+.swiper-wrapper{
+.swiper-slide{
+
+  .slide{
+
+
+      h2.bannerHeading{
+        margin-top: 224px;
+        font-size: 2.6rem;
+        line-height: 4.4rem;
+        letter-spacing: 5px;
+
+        .join{
+          font-size: 2.5rem;
+        }
+      }
+
+
+      .bannerButton{
+        button{
+          margin-top: 44px;
+          width: 288px;
+          height: 56px;
+          
+          p.btnText{
+              font-size: 1rem;
+              padding-left: 1.6rem;
+          }
+
+          img.bannerArrow{
+            width: 18px;
+            padding-right: 1.6rem;
+          }
+      }
+      }
+
+      .agile{margin-top: 238px!important;}
+
+      .research{
+        padding: 0 100px 0 142px!important;
+        margin-top: 268px!important;
+        text-align: left!important;
+      }
+
+      .at{margin-top: 274px!important;}
+  }
+
+  
+}
+}
+}
+
+}
+
+
+@media screen and (max-width: 640px){
+  .swiper-button-prev {
+      width: 22px;
+      height: 24px;
+    }
+
+  .swiper-button-next{
+      width: 22px;
+      height: 24px;
+  }
+  
+
+  .swiper-container1{
+
+  h1.logo{
+      top: 24px;
+
+      img{
+        width: 132px;
+      }
+    }
+.swiper-wrapper{
+.swiper-slide{
+
+  .slide{
+
+
+      h2.bannerHeading{
+        margin-top: 148px;
+        font-size: 2rem;
+        line-height: 3.2rem;
+        letter-spacing: 4px;
+
+        .join{
+          font-size: 1.7rem;
+          letter-spacing: 2px;
+        }
+      }
+
+
+      .bannerButton{
+        button{
+          margin-top: 44px;
+          width: 186px;
+          height: 42px;
+          border-radius: 34px;
+          
+          p.btnText{
+              font-size: 0.8rem;
+              padding-left: 1.2rem;
+          }
+
+          img.bannerArrow{
+            width: 14px;
+            padding-right: 1.2rem;
+          }
+      }
+      }
+
+      .agile{
+          margin-top: 178px !important;
+      }
+
+      .research{
+        margin-top: 202px!important;
+        padding: 0 4%!important;
+      }
+
+      .at{margin-top: 238px!important;}
+  }
+
+  .sld1, .sld2, .sld3, .sld4{
+    background-image: none!important; 
+  }
+
+  img.a1, img.a3{
+    display: none!important;
+  }
+
+  .mobile-slider1{
+      background-image: url(../../../img/homeBanner/mobile/mob1.jpg)!important;
+  }
+
+  .mobile-slider2{
+      background-image: url(../../../img/homeBanner/mobile/mob2.jpg)!important;
+  }
+
+  .mobile-slider3{
+      background-image: url(../../../img/homeBanner/mobile/mob3.jpg)!important;
+  }
+
+  .mobile-slider4{
+      background-image: url(../../../img/homeBanner/mobile/mob4.jpg)!important;
+  }
+
+}
+}
+}
+
+}
